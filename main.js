@@ -5,23 +5,34 @@
 // function saludar() {
 //   return "Hola";
 // }
+
 const saludar = () => "Hola";
+
+
 
 // Convierte la siguiente función en una función flecha en línea:
 
 // function division(a,b) {
 //   return a / b;
 // }
+
 const division = (a,b) => a/b;
 console.log(division(9,3));
+
+
+
 
 // Convierte la siguiente función en una función flecha:
 
 // function miNombre(nombre) {
 //   return `Mi nombre es ${nombre}`;
 // }
+
 const miNombre = (nombre) => `Mi nombre es ${nombre}`
 console.log(miNombre("Agustin"));
+
+
+
 
 // Convierte las siguientes funciones en funciones flecha:
 
@@ -35,6 +46,8 @@ console.log(miNombre("Agustin"));
 const test2 = () => "Función test 2 ejecutada"
 
 const test1 = (callback) => callback()
+
+
 
 
 
@@ -72,6 +85,7 @@ let gente = [
         },
       ];
 
+
 //   Crea un array con la gente mayor de 25 años y muéstralo por consola.
 
 let mayores25 = []
@@ -100,11 +114,15 @@ gente.forEach((nombres)=>{
 console.log(nombresConJ);
 
 
+
+
 // 3. Map
 // Utilizando el array de antes crea un array con la gente mayor de 25 años y muéstralo por consola.
 
 const allMayor25 = mayores25.map (edades => edades.edad)
 console.log(allMayor25);
+
+
 
 
 // Crea un array con la gente que empieza por J. 
@@ -290,8 +308,7 @@ const sentenceElements = [
 // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
 
 const fraseMeLlamo = sentenceElements.reduce((valorAnterior,ValorActual) => {
-    return `${sentenceElements[0]} ${sentenceElements[1]} Agustin ${sentenceElements[3]} ${sentenceElements[4]} ${sentenceElements[5]} ${sentenceElements[6]} ${sentenceElements[7]} ${sentenceElements[8]} ${sentenceElements[9]}`
-
+  return valorAnterior + " " + ValorActual  
 })
 
 console.log(fraseMeLlamo);
